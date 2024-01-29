@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Noto Sans TC', sans-serif; */
+
+:root {
+  --f-family-1: 'Inter', 'Noto Sans TC', sans-serif;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f-family-1);
+
+}
+
+
+
+
+body {
+    background-color: #E6E6E0;
+
+}
+
+/* ============================================== */
+
+
+
+.h2,
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#username,
+#password,
+#fullname,
+#comfirm_password,
+#username2,
+#password2 {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    color: #0C5646;
+}
+
+h5 {
+    /* margin: 20px; */
+    font-size: 14px;
+    color: #a3a2a3;
+}
+
+h5:hover {
+    color: black;
+}
+
+#container1,
+#container2 {
+    /* //margin: 50px; */
+    padding: 5px;
+    width: 250px;
+    height: 310px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 10px solid #0C5646;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+
+    /*定位對齊*/
+    position: relative;
+    margin: auto;
+    top: 100px;
+
+
+}
+
+
+
+.system_name {
+    /*定位對齊*/
+    position: relative;
+    margin: auto;
+    top: 80px;
+    text-align: center;
+}
+
+.submit {
+    color: white;
+    background: #0C5646;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+.submit2 {
+    color: white;
+    background: #0C5646;
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.submit:hover {
+    background: #0C5646;
+}
+
+#container2 {
+    visibility: hidden;
+    /*剛開始消失*/
+    height: 400px;
+}
+
+
+input {
+    padding: 5px;
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+
+.container2 form {
+    text-align: center;
+    align-items: center;
+}
+
+
+.login {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+/* ---signup--- */
+
+
+.signup {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+footer {
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+footer p {
+    font-size: 8px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

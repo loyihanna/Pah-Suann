@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+    
+    <html lang="zh-Hant-TW">
+    <head>
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- TODO: -->
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+        <meta charset="UTF-8">
+        <title>一起北山</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+
+    <body>
+
+
+        <!-- ==================header=================== -->
+        <header>
+
+
+            <div class="navbar">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">
+                            <!-- TODO: -->
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+
+
+                        <div class="nav_center collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-0 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#">登山指南</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">關於北山</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="icon">
+                            <div class="dropdown">
+
+                                <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" stroke="black"
+                                        stroke-width=".008rem">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <form class="dropdown-item" class="d-flex justify-content-end">
+                                        <input class="form-control me-2" type="search" placeholder="搜尋文章"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+
+                                </ul>
+                            </div>
+
+                            <a title="登入" href="./login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                </svg>
+                            </a>
+
+
+
+
+
+
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+
+                            <div class="offcanvas offcanvas-end nav_mb" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel"></h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+
+                                    <ul class="navbar-nav mb-0 ">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./about.html">關於北山</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </nav>
+
+            </div>
+
+
+
+        </header>
+
+
+        <!-- ===================section======================== -->
+
+
+        <div class="sec">
+            <div class="sec_container">
+                <h1>一起北山</h1>
+                <p> 探索北部山區之美，我們的步道網站是您最佳導遊。
+                    提供詳盡資訊，從初學者到登山達人，輕鬆發現每條步道的獨特之處。豐富文字與引人入勝的影像，帶您穿越北部山區，開啟山林歷險，感受大自然的奇妙之處。</p>
+            </div>
+        </div>
+
+
+        <!-- =====================main======================= -->
+
+        <main>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <img class="item1" src="./img/./header_hr6.svg" alt="">
+
+                <div class="accordion-item">
+
+
+
+                    <h2 class="accordion-header ac1" id="flush-headingOne">
+
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+
+
+                            <h3 class="hour">6</h3>
+                            <h3 class="morethan">
+                                小時以上<br>
+                                <span>more than 6hr</span>
+                            </h3>
+                            <p>登山好手前來朝聖,挑戰你的耐力和體力。</p>
+
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+
+
+                            <div class="container">
+                                <hr>
+
+                                <div class="a_col">
+                                    <div class="hrLeft">
+                                        <img class="hr_img" src="./img/art_pic1.svg" alt="">
+                                    </div>
+                                    <div class="hrRight">
+
+                                        <h2>大屯山主峰登山步道</h2>
+                                        <article>
+                                            「大屯山主峰登山步道」。這條步道起點位於台北市北投區，是台北市最高峰大屯山的主峰登山路線之一。
+                                            大屯山主峰登山步道全程約12公里，來回需要較長時間，預估在六小時左右。這條步道經過茂密的樹海、溪谷和岩石區，沿途風景變化豐富。在適當的季節，您還有機會欣賞到不同種類的植物和花卉。
+                                            請注意，大屯山地區氣溫較低，且步道有些許挑戰，建議攜帶足夠的水、風雨衣以及登山裝備。由於步道起伏較大，這也是一個需要較強體力的挑戰，請確保您的身體狀況能夠應對。完成這條步道後，您將能夠俯瞰到台北市區的壯麗風景，是一個值得挑戰的登山體驗。
+                                        </article>
+                                        <!-- TODO: -->
+                                        <a href="">閱讀全文...</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="accordion-item acc2 ">
+
+                    <img src="./img/header_hr3.svg" alt="" class="item2">
+
+
+                    <h2 class="accordion-header ac2" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h3 class="hour">4</h3>
+                            <h3 class="morethan">
+                                小時左右<br>
+                                <span>about 4 hours</span>
+                            </h3>
+                            <p>壯麗風光與體力挑戰同在，成就感油然而生</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ac2  ">
+
+
+                            <div class="container">
+
+                                <hr>
+                                <div class="a_col">
+                                    <div class="hrLeft">
+                                        <img class="hr_img" src="./img/art_pic1.svg" alt="">
+                                    </div>
+                                    <div class="hrRight">
+                                        <h2>烏來瀑布登山步道</h2>
+                                        <article>
+                                            「烏來瀑布登山步道」。這條步道位於新北市烏來區，是一條相對具挑戰性但仍能在半天內完成的山徑。
+                                            烏來瀑布登山步道全程約為8公里，步行至瀑布頂部，整體所需時間約在四小時左右。這條步道穿越了原始的樹海，並沿著溪谷往上攀升，沿途有多處觀景點可以欣賞到美麗的瀑布景色和周邊山區風光。
+                                            請注意，由於這條步道相對挑戰，建議攜帶足夠的水和適當的登山裝備。登頂後，您將能夠欣賞到令人驚嘆的瀑布景色，同時感受到大自然的宏偉與靜謐。這是一個適合喜歡挑戰的登山者和探險家的選擇。
+                                            <a href="">閱讀全文...</a>
+
+                                        </article>
+                                    </div>
+                                </div>
+                                <hr>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="accordion-item ac2 acc3 ">
+                    <img src="./img/header_hr2.svg" alt="" class="item3">
+
+                    <h2 class="accordion-header ac3" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+
+                            <h3 class="hour">2</h3>
+                            <h3 class="morethan">
+                                小時左右<br>
+                                <span>about 2 hours</span>
+                            </h3>
+                            <p>樹蔭小徑攀至山頂，眺望四周，初級登山的愜意...</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse "
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ac3">
+
+                            <div class="container">
+
+                                <hr>
+                                <div class="a_col">
+                                    <div class="hrLeft">
+                                        <img class="hr_img" src="./img/art_pic1.svg" alt="">
+                                    </div>
+                                    <div class="hrRight">
+                                        <h2>陽明山櫻花湖步道</h2>
+                                        <article>
+                                            「陽明山櫻花湖步道」。這條步道位於台北市北投區，是一條風景優美、相對輕鬆的步行路線。
+                                            從櫻花湖出發，您可以欣賞到陽明山區的自然美景，包括湖泊、樹海和藍天白雲。整條步道長度適中，約需兩小時左右的時間，是一個適合休閒散步的好選擇。這裡的櫻花湖在特定季節還能欣賞到美麗的櫻花，增添了步行的情趣。
+                                            同時，附近也有一些小吃店和咖啡廳，您可以在步行後在湖畔區休息，享受一下美好的時光。這條步道適合各年齡層的遊客，無論是家庭、情侶還是獨自一人，都能在這裡找到放鬆身心的機會。
+                                            <a href="">閱讀全文...</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <hr>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item ac3 acc4 ">
+                    <img src="./img/header_hr1.svg" alt="" class="item4">
+
+                    <h2 class="accordion-header ac4" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+
+                            <h3 class="hour">1</h3>
+                            <h3 class="morethan">
+                                小時左右<br>
+                                <span>about 1 hour</span>
+                            </h3>
+                            <p>沐浴陽光，踏上輕鬆山徑,來場與大自然的野餐吧！</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ac4">
+
+                            <div class="container">
+
+                                <hr>
+                                <div class="a_col">
+                                    <div class="hrLeft">
+                                        <img class="hr_img" src="./img/art_pic1.svg" alt="">
+                                    </div>
+                                    <div class="hrRight">
+                                        <h2>石碇太平山森林步道</h2>
+                                        <article>上新北市的「石碇太平山森林步道」。這條步道環繞在太平山區，提供清新的空氣和豐富的自然景觀。
+                                            太平山森林步道的起點位於石碇區，步道全長約3公里，約需1至1.5小時的時間，取決於您的步行速度。整條步道經過茂密的樹林、清涼的溪流，以及沿途的涼亭，提供適合步行者休息的地方。
+                                            在步道的高點，您可以俯瞰到遠處的山谷和周圍的綠意盎然。這條步道適合初學者和家庭，同時也是欣賞北部山區美麗景色的好地方。請注意，由於天氣變化，建議攜帶適當的防曬和防雨裝備。
+                                            <a href="">閱讀全文...</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <hr>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+
+
+        <!-- ======================footer======================= -->
+
+        <footer>@Pah-Suann | 2023 | By Chloe Wu,Hanna Lo </footer>
+
+
+        <!-- =================other================= -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+
+
+
+    </body>
+
+    </html>

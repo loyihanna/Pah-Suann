@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="favicon.ico" type="image/x-icon" rel="icon" />
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <meta charset="UTF-8">
+    <title>一起北山</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./article.css">
+</head>
+
+<body>
+
+
+    <!-- ==================header=================== -->
+    <header>
+
+
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+
+                    <div class="nav_center collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-0 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./index.html">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="./about.html">關於北山</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="icon">
+                        <div class="dropdown">
+                            <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16" stroke="black" stroke-width=".008rem">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <form class="dropdown-item" class="d-flex justify-content-end">
+                                    <input class="form-control me-2" type="search" placeholder="搜尋文章"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </ul>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                            class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end nav_mb" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel"></h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav mb-0 ">
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="./index.html">首頁</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="./about.html">關於北山</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- ===================section======================== -->
+
+
+
+    <div class="section">
+        <div class="sec_container">
+            <div class="sec" style="text-align:center; ">                
+                <h1>象山</h1>
+                <p> 象山步道是一條相對輕鬆的登山路徑，適合各個年齡層的遊客。即使您不是登山愛好者，也可以輕鬆享受步道帶來的美好體驗。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================main========================== -->
+
+
+    <div class="main">
+        <!-- ---sec2------>
+        <div class="section2">
+            <div class="sec2_h">
+                <h3>象山親山步道</h3>
+
+                <div class="sec2_hr">
+
+                    <p>發文時間</p>
+
+
+                </div>
+            </div>
+            <article>
+                <p>
+                    山徑上有階梯和平坦的路段，登山過程中，您可以感受到清新的空氣和自然景觀帶來的放鬆感。許多人喜歡在這裡運動，健行或慢跑，同時欣賞著山間的風光。
+                    另外，象山步道的周邊地區也有許多值得探索的景點和美食，例如附近的貓空纜車、五分埔購物區和饒河街夜市等。遊客可以在登山後探索這些地方，品嚐台北特色小吃和體驗當地文化，豐富您的旅行體驗。
+                    總括而言，台北象山不僅是一個登山健行的好去處，更是一個能讓遊客近距離感受台北城市風光與自然景觀的絕佳景點。
+                </p>
+                <p>
+                    山徑上有階梯和平坦的路段，登山過程中，您可以感受到清新的空氣和自然景觀帶來的放鬆感。許多人喜歡在這裡運動，健行或慢跑，同時欣賞著山間的風光。
+                    另外，象山步道的周邊地區也有許多值得探索的景點和美食，例如附近的貓空纜車、五分埔購物區和饒河街夜市等。遊客可以在登山後探索這些地方，品嚐台北特色小吃和體驗當地文化，豐富您的旅行體驗。
+                    總括而言，台北象山不僅是一個登山健行的好去處，更是一個能讓遊客近距離感受台北城市風光與自然景觀的絕佳景點。
+                </p>
+            </article>
+            <hr>
+            <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bg01.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bg02.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bg03.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="source">
+                <div class="sour_l">
+                    <p>文章來源：</p>
+                    <a href="" class="bi bi-link">來源名稱</a>
+                </div>
+                <div class="sour_r">
+                    <P>回目錄頁</P>
+                    <a href="./index.html" class="bi bi-arrow-return-left"></a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="message">
+                <div id="parent">
+                    <h4>山友留言區</h4>
+                    <div id="box"><em>留言内容……</em></div>
+                    <div class="text">
+                        <textarea id="text" cols="50" rows="3" maxlength="65525" required="required"></textarea>
+                    </div>
+                    <div class="mes_btn">
+                        <input id="btn" type="button" onclick="fnsubmit()" value="送出留言" style="color: #fff;" />
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ======================footer======================= -->
+
+    <footer>@Pah-Suann | 2023 | By Chloe Wu,Hanna Lo </footer>
+
+
+    <!-- =================other================= -->
+
+
+
+
+    <script>
+
+        i = 1;
+        function fnsubmit() {
+            var odiv = document.getElementById("box");
+            var oem = odiv.getElementsByTagName("em")[0];
+            var otext = document.getElementById("text");
+            var oli = odiv.getElementsByTagName("li");
+            var add_li = document.createElement("li");
+            var o_span = document.createElement("span");
+            if (otext.value == "") {
+                alert("請填寫留言内容！");
+                return;
+            }
+            oem.style.display = "none";
+            o_span.style.position = "absolute";
+            o_span.style.top = "-20px";
+            o_span.style.right = "20px";
+            o_span.style.background = "#dddddd00";
+            add_li.style.position = "relative";
+            add_li.index = i;
+            add_li.style.background = "#dddddd00";
+            add_li.style.marginBottom = "20px";
+            var str = document.createTextNode(i + "、" + otext.value);
+            var strspan = document.createTextNode("確定删除" + i + "、" + otext.value + "内容？");
+            add_li.appendChild(o_span);
+            o_span.style.display = "none";
+            o_span.appendChild(strspan);
+            add_li.appendChild(str);
+            odiv.appendChild(add_li);
+            i++;
+            for (j = 0; j < oli.length; j++) {
+                var m = j;
+                oli[j].onmouseover = function () {
+                    this.style.background = "#dddddd00";
+                    (this.childNodes(o_span)).style.display = "block";
+                };
+                oli[j].onmouseout = function () {
+                    this.style.background = "#dddddd00";
+                    (this.childNodes(o_span)).style.display = "none";
+                };
+                //整筆刪除
+                // oli[j].onclick = function () {
+                //     m--;
+                //     odiv.removeChild(this);
+                //     if (m < 0) {
+                //         oem.style.display = "block";
+                //     };
+                // };
+            };
+        }
+
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+
+</html>

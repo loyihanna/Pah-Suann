@@ -1,0 +1,17 @@
+.p {
+    width: 800px;
+    height: 800px;
+    background-color: #623838;
+    display: block;
+}
+
+.p2 {
+    width: 30%;
+    margin: auto auto;
+    ;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+}
